@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Kanak Garg</title>
+<meta name="description" content="The full project archive of Kanak Garg — UI/UX, graphic design, posters, editorial, presentations and branding.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,420&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ============ NAV ============ -->
+<nav id="siteNav">
+  <div class="wrap navwrap">
+    <a href="index.html#top" class="brand">Kanak Garg</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <div class="navlinks" id="navLinks">
+      <a href="projects.html" data-nav>Work</a>
+      <a href="index.html#about" data-nav>About</a>
+      <a href="index.html#experience" data-nav>Experience</a>
+      <a href="index.html#contact" data-nav>Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ ARCHIVE HEADER + GRID ============ -->
+<section class="work-section archive-page">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="kicker">Full archive</p>
+        <h2 class="section-title">All Projects</h2>
+      </div>
+      <p class="section-note">Every project, one place — interfaces, identities, posters and pages. Click anything to look closer.</p>
+    </div>
+
+    <div class="filters" id="filters" role="tablist">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="uiux">UI/UX</button>
+      <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+      <button class="filter-btn" data-filter="editorial">Editorial</button>
+    </div>
+
+    <div class="grid" id="projectsGrid"><!-- injected by script.js --></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-wrap">
+    <span class="footer-brand">Kanak Garg</span>
+    <span>UI/UX + Graphic Design</span>
+    <span>New Delhi, India</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
